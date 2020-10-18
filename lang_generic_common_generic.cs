@@ -21,4 +21,23 @@ namespace lang.generic.common{
             return this.file_name;
         }
     }
+
+    public class Directory{
+        private String directory_name;
+        public Directory(String para){
+            this.directory_name=para;
+        }
+        public Directory(Directory para){
+            this.directory_name=para.directory_name;
+        }
+        public void Set(String para){
+            this.directory_name=para;
+        }
+        public void Set(Directory para){
+            this.directory_name=para.directory_name;
+        }
+        public String Get(){
+            return this.directory_name;
+        }
+    }
 }
