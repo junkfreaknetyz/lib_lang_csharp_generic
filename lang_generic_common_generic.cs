@@ -15,7 +15,7 @@ namespace lang.generic.common{
             this.file_name=para;
         }
         public void Set(File para){
-            this.file_name=para.file_name;
+            this.file_name=para.Get();
         }
         public String Get(){
             return this.file_name;
@@ -34,7 +34,7 @@ namespace lang.generic.common{
             this.directory_name=para;
         }
         public void Set(Directory para){
-            this.directory_name=para.directory_name;
+            this.directory_name=para.Get();
         }
         public String Get(){
             return this.directory_name;
@@ -46,17 +46,18 @@ namespace lang.generic.common{
         public PathSeparatore(String para){
             this.path_separatore=para;
         }
+        public PathSeparatore(PathSeparatore para){
+            this.path_separatore=para.Get();
+        }
         public String Get(){
             return this.path_separatore;
         }
         public void Set(String para){
             this.path_separatore=para;
         }
+
         public void Set(PathSeparatore para){
-            this.path_separatore=para.path_separatore;
-        }
-        public void Set(String para){
-            this.path_separatore=para;
+            this.path_separatore=para.Get();
         }
     }
 }
