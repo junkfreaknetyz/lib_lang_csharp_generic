@@ -1,4 +1,4 @@
-namespace language.generic.common {
+namespace language.generic.common{
     public static class constants {
     public static readonly string CS_SPACE="";
     public static readonly int CS_ZERO_AS_INT=0;
