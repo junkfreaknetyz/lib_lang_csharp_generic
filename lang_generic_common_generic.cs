@@ -1,10 +1,10 @@
 using System;
 
-namespace lang.generic.common{
+namespace language.generic.common.io{
     public class File{
 
         private String file_name;
-        
+
         public File(String para){
             this.file_name=para;
         }
